@@ -95,11 +95,9 @@ def _coerce_list(value: Any):
 def canonicalize_text(text: str, mode: str = "Simple") -> CanonicalizationResult:
     mode_instruction = REWRITE_MODES.get(mode, REWRITE_MODES["Simple"])
     formatted_prompt = PROMPT_TEMPLATE.format_messages(
-        {
-            "text": text,
-            "mode_name": mode,
-            "mode_instruction": mode_instruction,
-        }
+        text=text,
+        mode_name=mode,
+        mode_instruction=mode_instruction,
     )
     prompt = "\n\n".join(message.content for message in formatted_prompt)
     raw_output = _generate_with_ollama(prompt)
