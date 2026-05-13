@@ -1,3 +1,5 @@
+
+# LIVE DEMO - https://cross-culture-semantic-distortion-detector-k6yp4y4xxnggy7rzeeh.streamlit.app/
 # Cross-Culture Semantic Distortion Detector
 
 A Streamlit app that rewrites text into canonical English, compares how meaning changes, and flags possible semantic distortion.
