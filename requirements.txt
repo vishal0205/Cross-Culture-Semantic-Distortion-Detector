@@ -1,0 +1,7 @@
+streamlit
+langchain-core
+langchain-community
+sentence-transformers
+scikit-learn
+torchvision
+requests
